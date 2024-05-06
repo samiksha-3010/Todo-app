@@ -1,6 +1,5 @@
 import Todo from '../modals/Todo.js';
 
-// import todo from "../modals/Todo.js";
 
 export const addTodo = async (request, response) => {
     try {
@@ -66,3 +65,4 @@ export const deleteTodo = async (request, response) => {
         return response.status(500).json(error.message);
     }
 }
+
