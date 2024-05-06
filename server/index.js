@@ -1,9 +1,10 @@
-import express from 'express';
-import mongoose from 'mongoose';
-import dotenv from 'dotenv';
+const express = require("express");
+const mongoose = require("mongoose");
+require("dotenv").config();
+
 import cors from 'cors';
 import { getCurrentUser, login, register } from './controllers/Auth.controllers.js';
-import { addTodo, deleteTodo, getAllTodos, toggleTodoDone, updateTodo } from './controllers/todo-controller.js';
+// import { addTodo, deleteTodo, getAllTodos, toggleTodoDone, updateTodo } from './controllers/todo-controller.js';
 
 const app = express();
 
